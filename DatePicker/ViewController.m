@@ -7,8 +7,15 @@
 //
 
 #import "ViewController.h"
+#import "UIDateTimePickerView.h"
+#define SCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)
+#define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
+
 
 @interface ViewController ()
+{
+    UIDateTimePickerView *dateTimePicker;
+}
 
 @end
 
@@ -25,5 +32,14 @@
     // Dispose of any resources that can be recreated.
 }
 
-
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    if (!dateTimePicker)
+    {
+        dateTimePicker = [UIDateTimePickerView UIDateTimePickerViewInitWithFrame:CGRectMake(0, SCREEN_HEIGHT / 3 * 2, SCREEN_WIDTH, SCREEN_HEIGHT / 3)  BeganTime:[NSDate dateWithTimeIntervalSince1970:1271952000] WithEndTime:[NSDate date]];
+    } else
+    {
+        [dateTimePicker showDatePicker];
+    }
+}
 @end

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4548216F1FD54B66001E4F82 /* UIDateTimePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4548216C1FD54B65001E4F82 /* UIDateTimePickerView.m */; };
+		454821701FD54B66001E4F82 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 4548216E1FD54B65001E4F82 /* UIView+Extension.m */; };
 		45CBF6AB1FD5323B007F849B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 45CBF6AA1FD5323B007F849B /* AppDelegate.m */; };
 		45CBF6AE1FD5323B007F849B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45CBF6AD1FD5323B007F849B /* ViewController.m */; };
 		45CBF6B11FD5323B007F849B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45CBF6AF1FD5323B007F849B /* Main.storyboard */; };
@@ -35,6 +37,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4548216B1FD54B65001E4F82 /* UIDateTimePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIDateTimePickerView.h; sourceTree = "<group>"; };
+		4548216C1FD54B65001E4F82 /* UIDateTimePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIDateTimePickerView.m; sourceTree = "<group>"; };
+		4548216D1FD54B65001E4F82 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		4548216E1FD54B65001E4F82 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		454821711FD54D81001E4F82 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		454821721FD54D82001E4F82 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		45CBF6A61FD5323B007F849B /* DatePicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DatePicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45CBF6A91FD5323B007F849B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		45CBF6AA1FD5323B007F849B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -78,6 +86,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4548216A1FD54B65001E4F82 /* UIDateTimePicker */ = {
+			isa = PBXGroup;
+			children = (
+				4548216B1FD54B65001E4F82 /* UIDateTimePickerView.h */,
+				4548216C1FD54B65001E4F82 /* UIDateTimePickerView.m */,
+				4548216D1FD54B65001E4F82 /* UIView+Extension.h */,
+				4548216E1FD54B65001E4F82 /* UIView+Extension.m */,
+			);
+			path = UIDateTimePicker;
+			sourceTree = "<group>";
+		};
 		45CBF69D1FD5323B007F849B = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +124,7 @@
 				45CBF6AA1FD5323B007F849B /* AppDelegate.m */,
 				45CBF6AC1FD5323B007F849B /* ViewController.h */,
 				45CBF6AD1FD5323B007F849B /* ViewController.m */,
+				4548216A1FD54B65001E4F82 /* UIDateTimePicker */,
 				45CBF6AF1FD5323B007F849B /* Main.storyboard */,
 				45CBF6B21FD5323C007F849B /* Assets.xcassets */,
 				45CBF6B41FD5323C007F849B /* LaunchScreen.storyboard */,
@@ -218,7 +238,6 @@
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
 			);
 			mainGroup = 45CBF69D1FD5323B007F849B;
@@ -265,7 +284,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				454821701FD54B66001E4F82 /* UIView+Extension.m in Sources */,
 				45CBF6AE1FD5323B007F849B /* ViewController.m in Sources */,
+				4548216F1FD54B66001E4F82 /* UIDateTimePickerView.m in Sources */,
 				45CBF6B91FD5323C007F849B /* main.m in Sources */,
 				45CBF6AB1FD5323B007F849B /* AppDelegate.m in Sources */,
 			);
@@ -307,6 +328,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				45CBF6B01FD5323B007F849B /* Base */,
+				454821711FD54D81001E4F82 /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -315,6 +337,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				45CBF6B51FD5323C007F849B /* Base */,
+				454821721FD54D82001E4F82 /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -326,6 +349,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -370,7 +394,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -381,6 +405,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -419,7 +444,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
